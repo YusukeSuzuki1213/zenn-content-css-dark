@@ -1,0 +1,21 @@
+.footnotes {
+  margin-top: 3rem;
+  color: $text-color-darker;
+  font-size: 0.9em;
+  li::marker {
+    color: $text-color-darker;
+  }
+}
+.footnotes-title {
+  padding-bottom: 3px;
+  border-bottom: solid 1px $text-color-darker;
+  font-weight: 700;
+  font-size: 15px;
+}
+.footnotes-list {
+  margin: 13px 0 0;
+}
+// フォーカスされている脚注の背景色を変える
+.footnote-item:target {
+  background: $footnote-background-color;
+}

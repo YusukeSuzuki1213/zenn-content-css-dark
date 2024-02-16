@@ -1,0 +1,73 @@
+/* カラーパレット */
+$white: rgb(255 255 255);
+$zinc-400: rgb(161 161 170);
+$zinc-500: rgb(113 113 122);
+$zinc-600: rgb(82 82 91);
+$zinc-700: rgb(63 63 70);
+$zinc-800: rgb(39 39 42);
+$zinc-900: rgb(24 24 27);
+$blue-400: rgb(96 165 250);
+$red-500: rgb(239 68 68);
+$red-800: rgb(153 27 27);
+$yellow-500: rgb(234 179 8);
+$yellow-700: rgb(161 98 7);
+
+/* 目的別カラー変数 */
+$background-color: $zinc-900;
+$text-color: $white;
+$text-color-darker: $zinc-400;
+$border-color: $zinc-600;
+$link-text-color: $blue-400;
+$table-header-background-color: $zinc-900;
+$table-data-background-color: $zinc-800;
+$code-background-color: $zinc-800;
+$code-filename-background-color: $zinc-700;
+$pre-background-color: $zinc-800;
+$summary-background-color: $zinc-800;
+$summary-open-background-color: $zinc-900;
+$footnote-background-color: $zinc-800;
+$message-warning-background-color: $yellow-700;
+$message-warning-symbol-color: $yellow-500;
+$message-alert-background-color: $red-800;
+$message-alert-symbol-color: $red-500;
+
+/* border-radius */
+$rounded-xs: 4px;
+$rounded-sm: 7px;
+$rounded-md: 10px;
+$rounded-lg: 14px;
+$rounded-xl: 20px;
+$rounded-full: 99rem;
+$rounded-publication: 25%;
+
+$xs: 374px;
+$sm: 576px;
+$md: 768px;
+
+$breakpoints: (
+  "xs": "screen and (max-width: #{$xs})",
+  "sm": "screen and (max-width: #{$sm})",
+  "md": "screen and (max-width: #{$md})",
+);
+
+@mixin mq($size) {
+  @media #{map-get($breakpoints, $size)} {
+    @content;
+  }
+}
+
+// use short classname so that nested css does not become too long.
+.znc {
+  & > *:first-child {
+    margin-top: 0;
+  }
+  line-height: 1.9;
+  background-color: $background-color;
+  color: $text-color;
+
+  @import "./_content.scss";
+  @import "./_embed.scss";
+  @import "./_prism.scss";
+  @import "./_message.scss";
+  @import "./_footnotes.scss";
+}
