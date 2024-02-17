@@ -4,7 +4,7 @@ module.exports = {
     ],
     rules: {
       'no-invalid-position-at-import-rule': null,
-      'no-descending-specificity': null,      
+      //'no-descending-specificity': null,      
     }
  };
  
