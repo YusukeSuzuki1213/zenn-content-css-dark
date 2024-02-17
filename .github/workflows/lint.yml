@@ -1,14 +1,19 @@
 name: Lint
-on: [push]
+on: [push, pull_request]
 
 jobs:
-  linters:
-    name: stylelint
+  stylelint:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions-hub/stylelint@master
-        env:
-          PATTERN: "*.scss"
-          CONFIG_PATH: './stylelintrc.js'
+    - uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run Stylelint
+      run: "npm run lint"
