@@ -1,6 +1,6 @@
 {
   "name": "zenn-content-css-dark",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "license": "MIT",
   "description": "Zenn flavor content style with a dark theme.",
   "main": "lib/index.css",
