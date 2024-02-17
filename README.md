@@ -16,7 +16,7 @@ $ npm install zenn-content-css-dark
 import 'zenn-content-css-dark';
 ```
 
-To apply the style, specify `class=znc` on the element you want to style.
+To apply the style, specify `class=znc-dark` on the element you want to style.
 
 ```html
 <div class="znc-dark">
