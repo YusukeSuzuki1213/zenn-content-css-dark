@@ -1,4 +1,6 @@
 # zenn-content-css-dark
+[![Lint](https://github.com/YusukeSuzuki1213/zenn-content-css-dark/actions/workflows/lint.yml/badge.svg)](https://github.com/YusukeSuzuki1213/zenn-content-css-dark/actions/workflows/lint.yml)
+
 The [zenn-content-css](https://github.com/zenn-dev/zenn-editor/tree/canary/packages/zenn-content-css) adapted for a dark theme.
 
 
