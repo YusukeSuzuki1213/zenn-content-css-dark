@@ -65,9 +65,9 @@ $breakpoints: (
   background-color: $background-color;
   color: $text-color;
 
-  @import "./_content.scss";
-  @import "./_embed.scss";
-  @import "./_prism.scss";
-  @import "./_message.scss";
-  @import "./_footnotes.scss";
+  @import "content";
+  @import "embed";
+  @import "prism";
+  @import "message";
+  @import "footnotes";
 }
