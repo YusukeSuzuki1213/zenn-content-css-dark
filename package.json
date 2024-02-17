@@ -1,6 +1,6 @@
 {
   "name": "zenn-content-css-dark",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "description": "Zenn flavor content style with a dark theme.",
   "main": "lib/index.css",
@@ -8,8 +8,8 @@
     "lib/index.css"
   ],
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/YusukeSuzuki1213/zenn-content-css-dark"
+    "type": "git",
+    "url": "https://github.com/YusukeSuzuki1213/zenn-content-css-dark"
   },
   "scripts": {
     "dev": "sass ./src/index.scss ./lib/index.css --watch --no-source-map",
