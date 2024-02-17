@@ -3,6 +3,8 @@
 
 The dark theme of [zenn-content-css](https://github.com/zenn-dev/zenn-editor/tree/canary/packages/zenn-content-css).
 
+**[Demo](https://yusuke-suzuki.site/post/20240217_demo)**
+
 
 ## Install
 
