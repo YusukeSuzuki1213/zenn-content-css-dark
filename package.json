@@ -7,6 +7,10 @@
   "files": [
     "lib/index.css"
   ],
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/YusukeSuzuki1213/zenn-content-css-dark"
+  },
   "scripts": {
     "dev": "sass ./src/index.scss ./lib/index.css --watch --no-source-map",
     "build": "sass ./src/index.scss ./lib/index.css --style compressed --no-source-map",
