@@ -13,7 +13,6 @@ $yellow-500: rgb(234 179 8);
 $yellow-700: rgb(161 98 7);
 
 /* 目的別カラー変数 */
-$background-color: $zinc-900;
 $text-color: $white;
 $text-color-darker: $zinc-400;
 $border-color: $zinc-600;
@@ -62,7 +61,6 @@ $breakpoints: (
     margin-top: 0;
   }
   line-height: 1.9;
-  background-color: $background-color;
   color: $text-color;
 
   @import "content";
